@@ -1,0 +1,90 @@
+.btn {
+  min-width: 15.8rem;
+  height: 4.4rem;
+  border-radius: 1rem;
+  border: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2rem;
+  cursor: pointer;
+
+  &--link-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-1);
+
+    &.btn--with-icon {
+      svg {
+        color: var(--text-1);
+      }
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--with-icon {
+    & > * {
+      &:first-child {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  &--link-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-1);
+    background-color: var(--primary-3);
+    height: 5.3rem;
+
+    &.btn--with-icon {
+      svg {
+        color: var(--secondary-1);
+      }
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--primary {
+    background-color: var(--primary-1);
+    color: var(--secondary-1);
+
+    &:hover {
+      background-color: var(--primary-1-opacity);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--primary-2);
+    color: var(--secondary-1);
+
+    &:hover {
+      background-color: var(--primary-2-opacity);
+    }
+  }
+
+  &--tertiary {
+    background-color: var(--primary-3);
+    color: var(--secondary-1);
+
+    &:hover {
+      background-color: var(--primary-3-opacity);
+    }
+  }
+
+  &--alternative {
+    background-color: var(--red-1);
+    color: var(--secondary-1);
+
+    &:hover {
+      background-color: var(--red-1-opacity);
+    }
+  }
+}

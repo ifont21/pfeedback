@@ -1,0 +1,101 @@
+// ************* BLOCKS *****************************************
+
+.block {
+  display: block;
+}
+
+.inline-b {
+  display: inline-block;
+}
+
+.container {
+  width: 100%;
+  padding: 0 10rem;
+}
+
+.pd-v-1 {
+  padding: 2rem 0;
+}
+
+.pd-v-2 {
+  padding: 4rem 0;
+}
+
+.pd-v-3 {
+  padding: 6rem 0;
+}
+
+.mg-left-1 {
+  margin-left: 2rem;
+}
+
+.mg-left-2 {
+  margin-left: 4rem;
+}
+
+.mg-left-3 {
+  margin-left: 6rem;
+}
+
+.mg-right-1 {
+  margin-right: 2rem;
+}
+
+.mg-right-2 {
+  margin-right: 4rem;
+}
+
+.mg-right-3 {
+  margin-right: 6rem;
+}
+
+// ************* FLEX LAYOUT *******************************************
+
+.flex {
+  display: flex;
+}
+
+.f-wrap {
+  flex-flow: wrap;
+}
+
+.f-column {
+  flex-flow: column;
+}
+
+.f-center {
+  justify-content: center;
+}
+
+.f-all-centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.f-space-between {
+  justify-content: space-between;
+}
+
+.f-space-around {
+  justify-content: space-around;
+}
+
+.f-space-between {
+  justify-content: space-between;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
