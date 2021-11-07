@@ -1,6 +1,8 @@
+import { appIconArrowLeftIcon } from '../assets/ts-icons/icon-arrow-left';
 import { AppShowCaseModule } from './app-showcase/app-showcase.component';
 import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SvgIconsModule } from '@ngneat/svg-icon';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +14,13 @@ export class AppComponent {
 }
 
 @NgModule({
-  imports: [BrowserModule, AppShowCaseModule],
+  imports: [
+    BrowserModule,
+    AppShowCaseModule,
+    SvgIconsModule.forRoot({
+      icons: [appIconArrowLeftIcon],
+    }),
+  ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
 })

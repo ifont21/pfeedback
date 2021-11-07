@@ -15,8 +15,13 @@
     color: var(--text-1);
 
     &.btn--with-icon {
-      svg {
-        color: var(--text-1);
+      svg-icon {
+        position: relative;
+        bottom: 3px;
+
+        path {
+          stroke: var(--text-1);
+        }
       }
     }
 
@@ -42,8 +47,13 @@
     height: 5.3rem;
 
     &.btn--with-icon {
-      svg {
-        color: var(--secondary-1);
+      svg-icon {
+        position: relative;
+        bottom: 3px;
+
+        path {
+          stroke: var(--secondary-1);
+        }
       }
     }
 

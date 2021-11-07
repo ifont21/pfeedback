@@ -15,15 +15,12 @@
   &__category {
     display: flex;
     align-items: center;
+    max-width: 100rem;
+    flex-flow: wrap;
 
     & > * {
-      width: 100%;
-      max-width: 20rem;
+      min-width: 25rem;
       margin-bottom: 2rem;
-
-      &:not(:last-child) {
-        margin-right: 2rem;
-      }
     }
   }
 
