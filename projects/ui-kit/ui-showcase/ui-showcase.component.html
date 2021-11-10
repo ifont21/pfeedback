@@ -144,4 +144,22 @@
       </div>
    </div>
 
+   <div>
+      <h2 class="ui-showcase__sub-title sub-main-heading">Votes</h2>
+      <div class="card">
+         <pf-votes></pf-votes>
+      </div>
+   </div>
+
+   <div class="badges">
+      <h2 class="ui-showcase__sub-title sub-main-heading">Badges</h2>
+      <div class="badges__wrapper">
+         <div class="card badges__sample">
+            <pf-badges-filter [options]="badgesFilterOptions" (filters)="showFilters($event)"></pf-badges-filter>
+         </div>
+         <ul class="badges__filters">
+            <li *ngFor="let filter of filters">{{ filter }}</li>
+         </ul>
+      </div>
+   </div>
 </section>

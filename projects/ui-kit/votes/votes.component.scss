@@ -1,0 +1,52 @@
+.votes {
+    background-color: var(--secondary-1);
+    width: 4rem;
+    height: 5.3rem;
+    border-radius: 1rem;
+    display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #cfd7ff;
+  }
+
+  &:focus {
+    background-color: var(--primary-2);
+
+    .votes__number {
+      color: var(--primary-4);
+    }
+
+    .svg-icon-icon-arrow-up {
+      ::ng-deep {
+        path {
+          stroke: var(--primary-4);
+        }
+      }
+    }
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--secondary-3);
+    line-height: 1.9rem;
+  }
+
+  .svg-icon-icon-arrow-up {
+    ::ng-deep {
+      path {
+        stroke: var(--secondary-3);
+      }
+    }
+  }
+
+  & > * {
+    &:first-child {
+      margin-bottom: 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.badge {
+  background-color: var(--secondary-1);
+  height: 3rem;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1.4rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #cfd7ff;
+  }
+
+  &--selected {
+    background-color: var(--primary-2);
+
+    .badge__label {
+      color: var(--primary-4);
+    }
+  }
+  /* &:focus {
+    
+  } */
+
+  &__label {
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    color: var(--primary-2);
+  }
+}

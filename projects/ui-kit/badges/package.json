@@ -1,0 +1,9 @@
+{
+    "description": "UI Kit Badges",
+    "private": true,
+    "ngPackage": {
+        "lib": {
+            "entryFile": "public-api.ts"
+        }
+    }
+}
