@@ -1,0 +1,23 @@
+<div class="select">
+    <div class="select__panel" (click)="toggleOpen()" [class.select__panel--open]="open">
+        <div class="select__label select__label--colons">
+            {{ label }}
+        </div>
+        <div class="select__label select__label--selected">
+            {{ selected?.value}}
+        </div>
+        <svg-icon [key]="open ? 'icon-arrow-up' : 'icon-arrow-down'"></svg-icon>
+    </div>
+    <ng-container *ngIf="open">
+        <div class="select__list">
+            <ul>
+                <li class="select__list-item" *ngFor="let option of options" (click)="pick(option)">
+                    {{ option.value}}
+                    <ng-container *ngIf="option.key === selected.key">
+                        <svg-icon key="icon-check"></svg-icon>
+                    </ng-container>
+                </li>
+            </ul>
+        </div>
+    </ng-container>
+</div>

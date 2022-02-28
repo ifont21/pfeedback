@@ -1,5 +1,7 @@
 import { appIconArrowLeftIcon } from '../assets/ts-icons/icon-arrow-left';
 import { appIconArrowUpIcon } from '../assets/ts-icons/icon-arrow-up';
+import { appIconArrowDownIcon } from '../assets/ts-icons/icon-arrow-down';
+import { appIconCheckIcon } from '../assets/ts-icons/icon-check';
 import { AppShowCaseModule } from './app-showcase/app-showcase.component';
 import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,7 +21,12 @@ export class AppComponent {
     BrowserModule,
     AppShowCaseModule,
     SvgIconsModule.forRoot({
-      icons: [appIconArrowLeftIcon, appIconArrowUpIcon],
+      icons: [
+        appIconArrowLeftIcon,
+        appIconArrowUpIcon,
+        appIconArrowDownIcon,
+        appIconCheckIcon,
+      ],
     }),
   ],
   declarations: [AppComponent],
