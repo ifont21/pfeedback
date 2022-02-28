@@ -5,7 +5,8 @@
     "ng": "ng",
     "start": "ng serve --port=4208 --open",
     "build": "ng build",
-    "test": "ng test --watch",
+    "test": "ng test",
+    "test:watch": "ng test --watch",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "generate-icons": "svg-generator"
